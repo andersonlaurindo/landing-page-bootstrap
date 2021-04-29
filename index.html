@@ -2,71 +2,149 @@
 <html>
 
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>fruta e fruto</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="src/style.css">    
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Fruit & fruit</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="src/style.css">
 </head>
 
 <body>
 
-    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#">Fruit & Fruit</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
-            <div class="navbar-nav">
-              <a class="nav-link active" aria-current="page" href="#">home</a>
-              <a class="nav-link" href="#">recipes</a>
-              <a class="nav-link" href="#">about</a>
-              <a class="nav-link" href="#">contact</a>
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">Fruit & Fruit</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+          aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+          <ul class="navbar-nav">
+            <li><a class="nav-link active" aria-current="page" href="#">home</a></li>
+            <li><a class="nav-link" href="#">recipes</a></li>
+            <li><a class="nav-link" href="#">about</a></li>
+            <li><a class="nav-link" href="#">contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="carousel">
+      <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+            aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+            aria-label="Slide 2"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="src/img/carousel-img1.jpg" class="d-block w-100 image-carousel-one" alt="...">
+            <div class="carousel-caption d-none d-md-block h-50">
+              <h1 class="font-title display-4">Enjoy your food better</h1>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="src/img/carousel-img2.jpg" class="d-block w-100 image-carousel-two" alt="...">
+            <div class="carousel-caption d-none d-md-block h-50">
+              <h1 class="font-title display-4">Save your money and your health</h1>
             </div>
           </div>
         </div>
-      </nav>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+          data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+          data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </section>
 
-    <title>fruit & fruit</title>
+    <section id="title">
+      <h1 class="text-center font-title special-color pt-5">Recipes for you</h1>
+      <p class="text-center text-secondary pb-5">Our recipes help you enjoy food better, save money and save time</p>
+    </section>
 
-    <h1>Enjoy your food better</h1>
-    <h1>Improve your health!</h1>
+    <section id="recipes" class="container-fluid bg-light">
+      <div class="row justify-content-md-center">
+        <article class="card border-special-color card-width  p-0 m-4 col-12 col-md-4">
+          <img src="src/img/recipe-avocado.jpg" class="card-img-top card-position-image"
+            alt="bowl with avocado salad, top view">
+          <div class="card-body">
+            <h5 class="card-title">Avocado bowl</h5>
+            <p class="card-text">Refreshing recipe with vitamins for your breakfast!</p>
+            <a href="#" class="btn button-special-color">Go to recipe</a>
+          </div>
+        </article>
 
-    <h2>Saving your money</h2>
-    <h2>Our recipes help you enjoy food better, save money and save time</h2>
+        <article class="card border-special-color card-width  p-0 m-4 col-12 col-md-4">
+          <img src="src/img/recipe-kiwi.jpg" class="card-img-top card-position-image"
+            alt="porridge bowl with kiwi, top view">
+          <div class="card-body">
+            <h5 class="card-title">Kiwi salad</h5>
+            <p class="card-text">Refreshing recipe with vitamins for your breakfast!</p>
+            <a href="#" class="btn button-special-color">Go to recipe</a>
+          </div>
+        </article>
 
-    <img src="src/img/recipe-avocado.jpg" alt="bowl with avocado salad, top view">
-    <h3>Avocado bowl</h3>
-    <p>Refreshing recipe with vitamins for your breakfast!</p>
+        <article class="card border-special-color card-width  p-0 m-4 col-12 col-md-4">
+          <img src="src/img/recipe-mix.jpg" class="card-img-top card-position-image"
+            alt="vegetable mix and person hand adding olive oil, top view">
+          <div class="card-body">
+            <h5 class="card-title">Vegetable mix</h5>
+            <p class="card-text">Refreshing recipe with vitamins for your breakfast!</p>
+            <a href="#" class="btn button-special-color">Go to recipe</a>
+          </div>
+        </article>
 
-    <img src="src/img/recipe-kiwi.jpg" alt="porridge bowl with kiwi, top view">
-    <h3>Kiwi salad</h3>
-    <p>Refreshing recipe with vitamins for your breakfast!</p>
+        <article class="card border-special-color card-width  p-0 m-4 col-12 col-md-4">
+          <img src="src/img/recipe-chilli.jpg" class="card-img-top card-position-image"
+            alt="chili salad with some ingredients on the side, top view">
+          <div class="card-body">
+            <h5 class="card-title">Chillies Salad</h5>
+            <p class="card-text">Refreshing recipe with vitamins for your breakfast!</p>
+            <a href="#" class="btn button-special-color">Go to recipe</a>
+          </div>
+        </article>
 
-    <img src="src/img/recipe-mix.jpg"
-        alt="vegetable mix and person hand adding olive oil, top view">
-    <h3>Vegetable mix</h3>
-    <p>Refreshing recipe with vitamins for your breakfast!</p>
+        <article class="card border-special-color card-width  p-0 m-4 col-12 col-md-4">
+          <img src="src/img/recipe-oriental.jpg" class="card-img-top card-position-image"
+            alt="bowl with oriental style vegetable salad, top view">
+          <div class="card-body">
+            <h5 class="card-title">Oriental dish</h5>
+            <p class="card-text">Refreshing recipe with vitamins for your breakfast!</p>
+            <a href="#" class="btn button-special-color">Go to recipe</a>
+          </div>
+        </article>
 
-    <img src="src/img/recipe-chilli.jpg"
-        alt="chili salad with some ingredients on the side, top view">
-    <h3>Chillies Salad</h3>
-    <p>Refreshing recipe with vitamins for your breakfast!</p>
+        <article class="card border-special-color card-width  p-0 m-4 col-12 col-md-4">
+          <img src="src/img/recipe-beet.jpg" class="card-img-top card-position-image"
+            alt="bowl with roasted beets and garlic cloves in the foreground, with ingredients in the background">
+          <div class="card-body">
+            <h5 class="card-title">Roasted beets</h5>
+            <p class="card-text">Refreshing recipe with vitamins for your breakfast!</p>
+            <a href="#" class="btn button-special-color">Go to recipe</a>
+          </div>
+        </article>
+      </div>
+    </section>
+  </main>
 
-    <img src="src/img/recipe-oriental.jpg" alt="bowl with oriental style vegetable salad, top view">
-    <h3>Oriental dish</h3>
-    <p>Refreshing recipe with vitamins for your breakfast!</p>
+  <p>contact:<a href="mailto:email@fruitandfruit.com">email@fruitandfruit.com</a></p>
 
-    <img src="src/img/recipe-beet.jpg"
-        alt="bowl with roasted beets and garlic cloves in the foreground, with ingredients in the background">
-    <h3>Roasted beets</h3>
-    <p>Refreshing recipe with vitamins for your breakfast!
-    </p>
-
-    <p>contact:<a href="mailto:email@fruitandfruit.com">email@fruitandfruit.com</a></p>
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
+    crossorigin="anonymous"></script>
 
 </body>
 

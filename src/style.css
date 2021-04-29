@@ -1,0 +1,37 @@
+.card-width {
+    max-width: 18rem;
+}
+
+.image-carousel-one {
+    object-fit: cover;
+    object-position: 0 80%;
+    height: 400px;
+}
+
+.image-carousel-two {
+    object-fit: cover;
+    height: 400px;
+}
+
+.font-title {
+    font-family: 'Pacifico', cursive;
+}
+
+.special-color {
+    color: darkred;
+}
+
+.button-special-color {
+    background-color: darkred;
+    color: white;
+}
+
+.border-special-color {
+    border-color: darkred;
+}
+
+.card-position-image {
+    object-fit: cover;
+    /*object-position: 0 80%;*/
+    height: 200px;
+}
